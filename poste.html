@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <title>Claret</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+        
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: 'Montserrat';
+           text-transform: uppercase;
+           overflow-x: hidden;
+       }
+       body{
+       }
+       .bg{
+           background-color: #fccc3d;
+       }
+       .navbar{
+           padding: 0;
+       }
+       .navbar-toggler:focus{
+           box-shadow: none;
+       }
+       .nav-item{
+           margin: 0px 15px 0px 0px;
+       }
+       .nav-link{
+           color: #1762bb;
+           
+       }
+       #poste{
+            color: red;
+            font-weight: bold;
+            position: relative;
+        }
+        header img{ 
+            width: 100%;
+            max-width: 1920px;
+            height: 100%;
+
+
+        }
+        .sub {
+            margin-top: 10px;
+        }
+        .sub h2{
+            font-size: 25px;
+            position: relative;
+            align-items: center;
+            text-align: center;
+            font-weight: 400;
+            font-size: 15px;
+            margin: auto;
+            display: flexbox;
+            padding-top: 15px;
+            margin-top: 15px;
+            margin-left: 40px;
+            padding: 10px;
+            background-color: #fccc3d;
+            box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.205);
+        }
+        .imagem{
+            max-width: 450px;
+            width: 450px;
+            height: 450px;
+            display: flex;
+            margin: auto;
+            align-items: center;
+        }
+        .artigos{
+            width: 100%;
+            height: 80px;
+            background-color: rgba(130, 130, 131, 0.274);
+            justify-content: center;
+            text-align: center;
+            margin: 0px;
+            position: relative;
+            padding: 5px;
+            text-transform: lowercase;
+        }
+
+        .imagem2{
+            max-width: 450px;
+            height: 450px;
+            display: flex;
+            margin: auto;
+            padding: 50px;
+        }
+        .artigos-1{
+            width: 100%;
+            text-align: justify;
+            background-color: rgba(130, 130, 131, 0.274);
+            margin-top: 10px;
+            margin-bottom: 25px;
+            padding: 15px;
+            margin: auto;
+            text-transform: lowercase;
+
+        }
+        .subtitulo{
+            display: absolute;
+        }
+        .sub2{
+            background-color: #fccc3d;
+            padding: 15px;
+            font-size: 16px;
+            text-align: center;
+            align-items: center;
+            align-items: center;
+            margin-bottom: 150px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.205)
+        }
+        aside{
+            margin: 50px;
+            display: inline;
+            margin: auto;
+            align-content: center;
+            align-self: center;
+            align-items: center;
+            text-align: center;
+        }
+        .navbar-brand{
+            text-transform: capitalize;
+        }
+        .sub-3{
+            padding: 15px;
+            background-color: #fccc3d;
+            font-size: 10px;
+           
+        }
+
+        .sub3{
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 15px;
+            margin-top: 25px;
+            
+        }
+        h4{
+            text-align: left;
+            margin: 40px 0px 15px 80px;
+            text-transform: capitalize;
+
+        }
+        .tx-0{
+            text-align: left;
+            margin: 10px 0px 15px 80px;
+            text-transform: lowercase;
+            font-family: 'Montserrat';
+            font-weight: 400;
+        }
+        section p {
+            text-align: center;
+            width: 350px;
+            margin: auto;
+            background-color: rgb(22, 185, 84);
+            border-radius: 25px;
+            color: #fccc3d;
+
+        }
+        section p a {
+            color: #fccc3d;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .whats{
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+        }
+        .whats:hover{
+            background-color: rgb(236, 63, 63);
+            border-radius: 10px;
+        }
+        .h6-2 {
+            text-align: right;
+            font-size: 16px;
+            fo
+           
+        }
+        footer{
+            background-color: #004984;
+            padding: 20px;
+            height: 220px;
+        }
+        .container-footer{
+            max-width:1400px;
+            padding: 0 4%;
+            margin: auto;
+        }
+        .row-footer{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer-col{
+            width: 50%;
+            padding: 0 10px;
+
+        }
+
+        .footer-col h6{
+            font-size: 22px;
+            color: white;
+            margin-bottom: 10px;
+            margin-left: 30px;
+            font-weight: 700;
+            position: relative;
+        }
+
+
+        h6{
+            font-size: 22px;
+            color: white;
+            margin-bottom: 20px;
+            margin-left: 30px;
+            font-weight: 700;
+            position: relative;
+        }
+        .footer-col ul li {
+            max-width: 10px 0;
+
+        }
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .footer-col .medias-socias{
+            margin-top: 30px;
+        }
+        .footer-col .medias-socias a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 400px;
+            margin: 0 10px 10px 0 ;
+        }
+        button{
+            padding: 5px;
+            color: red;
+            border-radius: 10px;
+        }
+        form{
+            align-items: left;
+            float: right;
+            display: flex;
+            position: relative;
+        }
+    </style>
+    <body>
+        <nav class="navbar navbar-expand-md bg">
+            <a href="index2.html" class="navbar-brand fs-5 ms-3" id="poste"><img src="img/1x/Ativo 2.png" alt="png" width="40px" height="40px"> Home</a>
+        
+        <button class="navbar-toggler me-3" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#btn">
+        <i class="bx bx-menu  bx-md "></i>
+        <box-icon name='menu'></box-icon>
+        </button>
+        <div class="collapse navbar-collapse ul-bg" id="btn">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link mx-3">Nossa historia</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link mx-3">Redes Sociais</a>
+                </li>
+    
+            </ul>
+        </div>
+        </nav>
+        <header>
+            <img src="img/pagina dois.jpg" alt="jpg">
+            <div class="sub">
+                <h2> como é feita a ligação ?</h2>
+                <br>
+                <img  src="img/fatos-que-voce-desconhece-sobre-o-poste-de-luz.jpg" class="imagem" alt="">
+                <p class="artigos">
+                    A ligação da energia elétrica precisa ser solicitada na agência de fornecimento de luz do município. O processo costuma ser simples e basta levar documentações do imóvel e do responsável pela solicitação.</p>
+                
+                </div>
+        </header>
+        <aside>
+            <div class="subtitulo">
+                <h2 class="sub2"> quais os passos para instalação ?</h2>
+                <img  src="img/poste-padrao-principais-erros-ao-instalar.jpeg" class="imagem2" alt="">
+                <p class="artigos-1"> 
+                    A ligação da energia elétrica precisa ser solicitada na agência de fornecimento de luz do município. O processo costuma ser simples e basta levar documentações do imóvel e do responsável pela solicitação.</p>
+                
+                </div>
+                <div class="subtitulo">
+                    
+                    <div class="sub-3">
+                        <h7 class="sub3"> Quais os tipos de Poste?</h7>
+                    </div>
+                    <h4>poste com caixa acomplada</h4>
+                    <p class="tx-0">poste com caixa já embutida nele, são os postes mais usados para a instalação na sua residencia, a <b style="color: red;">CLARET</b> oferece o poste completo com todo material necessario para a ligação da elektro</p>
+                    <br>
+                    <h4>poste 90dan / Caixa Separada</h4>
+                    <p class="tx-0">O poste 90 dan é umas estrutura de concreto onde uma bengala de 1 1/4 irá ser amarrada, a diferrença do poste convencional é que a caixa da Elektro é acomplada no muro da residencia invens do poste.</p>
+                    </div>
+        </aside>
+        <div class="whats">
+            <a href="https://wa.me/5519992915420?text=Olá gostaria de fazer um orçamento" target="_blank" title="faça um orçamento conosco pelo Whatsapp">
+              <img src="img/menor.png" alt="png">
+            </a>
+            
+        </div>
+       <footer>
+       <div class="container-footer">
+        <div class="row-footer">
+            <div class="footer-col">
+                <h6 class="footer-1">empresa</h6>
+                <ul>
+                    <li><a href="#">Politica de Privacidade</a></li>
+                    <li><a href="#">Redes Socias</a></li>
+                    <li><a href="#">contatos</a></li>
+                    <li><a href="#">localidade</a></li>
+                       
+                     
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h6 class="h6-2">Rua 06,Av 16 N.1422 <br>jardim claret</h6>
+                
+                <div class="form-sub">
+                <form>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.487578636517!2d-47.57456668557312!3d-22.410667025988698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7db156e57693d%3A0x61ef8c975d46ddb5!2sClaret%20Materiais%20El%C3%A9tricos%20Hidr%C3%A1ulicos!5e0!3m2!1spt-BR!2sbr!4v1672101257937!5m2!1spt-BR!2sbr" width="250" height="110" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                    
+                </form>
+                
+            </div>
+          
+                
+                     
+       </div>
+
+        
+       </footer>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
